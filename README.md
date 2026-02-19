@@ -1,7 +1,9 @@
 # Heyssy Co.
 
 ## Um sonho que começou aos 15 anos
-
+<p align="center">
+  <img src="heyssyaa.png" alt="Heyssy Co. Logo" width="220"/>
+</p>
 Heyssy Co. não nasceu como um projeto de portfólio.  
 Não nasceu como um estudo de caso.  
 Nasceu como um sonho adolescente.
