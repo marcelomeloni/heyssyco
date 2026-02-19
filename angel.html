@@ -148,13 +148,13 @@ sizeOptions.forEach(sizeOption => {
 
 // Função de exemplo para verificar a disponibilidade com lógica personalizada
 function checkAvailability(size) {
-  // Coloque sua lógica de disponibilidade aqui
+
   // Por exemplo, verificar em um banco de dados ou em um objeto de produtos
   const availableSizes = ['P', 'M', 'G'];
   return availableSizes.includes(size);
 }
-const precoProduto = 99.9; // Preço do produto obtido do banco de dados
-const estoqueDisponivel = true; // Indicador de disponibilidade obtido do banco de dados
+const precoProduto = 99.9; 
+const estoqueDisponivel = true;
 
 // Exibindo o preço do produto
 const productPriceElement = document.getElementById('product-price');
@@ -186,9 +186,10 @@ buyButton.disabled = !estoqueDisponivel;
     thumbnail.addEventListener('click', () => {
       const imageUrl = thumbnail.dataset.image;
       productImage.style.backgroundImage = `url(${imageUrl})`;
-      productImageContainer.style.backgroundImage = `url(${imageUrl})`; // Atualiza a div principal também
+      productImageContainer.style.backgroundImage = `url(${imageUrl})`;
     });
 });
      </script>
 </body>
+
 </html>
