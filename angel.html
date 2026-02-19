@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://db.onlinewebfonts.com/c/9c0fb460cf447ba621edafabfefe672c?family=HalisGR-Regular" rel="stylesheet">
+    <title>Heyssy - Angel</title>
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <a href="index.html"><img width="100px" height="60px" src="logo.png"></a>
+            <div class="elements">
+                <a href="shop.html">shop</a>
+                <a target="_blank" href="https://discord.gg/4YdYnayt9Z">community</a>
+                <a href="#">social</a>
+            </div>
+            <div class="elements">
+                <a><i class="fa-solid fa-user"></i></a>
+                <a><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+
+        <div class="buycontainer">
+            <div class="producttopside">
+                <div style="display: flex;
+                flex-direction: column;
+              ">
+                <div class="imgprodcut" id="product-image"><img></div>
+                <div class="product-thumbnails">
+                    <img src="angel/angelheyssy.png" alt="Imagem 1" class="thumbnail" data-image="angel/angelheyssy.png">
+                    <img src="angel/angelheyssycosta.png" alt="Imagem 2" class="thumbnail" data-image="angel/angelheyssycosta.png">
+                    <img src="angel/angelheyssyicon.png" alt="Imagem 3" class="thumbnail" data-image="angel/angelheyssyicon.png">
+                    <img src="angel/angelheyssyicon2.png" alt="Imagem 3" class="thumbnail" data-image="angel/angelheyssyicon2.png">
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+            </div>
+                <div class="infosproduct">
+                    <span class="halis">ANGEL DARKNESS EDITION</span>
+                    <div style="justify-content: space-between;display: flex;  margin-top: 20px;"><span>Codigo:12314</span><span>Drop:Darkness</span></div>
+                    <div class="product-size-container">
+                        <div style="text-align: left;">
+                        <span>Selecione a opção de tamanho:</span>
+                        <div class="product-size">
+                          <span class="size-option" data-size="P">P</span>
+                          <span class="size-option" data-size="M">M</span>
+                          <span class="size-option" data-size="G">G</span>
+                        </div>
+                    </div>
+                     </div>
+                        <div class="price-and-buy">
+                            
+                            <div class="product-price" id="product-price"></div>
+                            <div class="buyside " >
+                                <button class="buy-button" style="display: none;"><div class="cartx-buy-button" data-buy-button="f88e2799-d526-44bc-9894-a7dcda28c3f2" data-shop-url="https://heyssy.mycartpanda.com/"></div>
+                                  <script type="text/javascript" src="https://heyssy.mycartpanda.com/js/buy-button.min.js"></script>
+                                  </button>
+
+
+                            <div class="availability-status"></div></div>
+                          </div>
+                      </div>
+                </div>
+                <div class="productbotside">
+                    <span>CAMISETA 100% ALGODÃO</span>
+                    <span>ALGODÃO PRÉ-ENCOLHIDO</span>
+                    <span>MODELAGEM TRADICIONAL</span>
+                    <span>ESTAMPA EM SILKSCREEN PUFF (FRONTAL)</span>
+                    <span>ESTAMPA EM SILKSCREEN (COSTAS)</span>
+                    <span>GOLA DA CAMISETA CANELADA</span>
+                </div>
+                <span class="alternativetext1">Tabela de Medidas (Aproximadas - CM)
+                </span>
+                <table>
+                    
+                    <tr>
+                        <th>TAMANHO</th>
+                        <th class="vertical-align">COMPRIMENTO (cm)</th>
+                        <th class="vertical-align">TORAX (cm)</th>
+                    </tr>
+                    <tr>
+                        <td>P</td>
+                        <td class="vertical-align">60</td>
+                        <td class="vertical-align">90</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td class="vertical-align">62</td>
+                        <td class="vertical-align">94</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td class="vertical-align">64</td>
+                        <td class="vertical-align">98</td>
+                    </tr>
+                    <tr>
+                        <td>GG</td>
+                        <td class="vertical-align">66</td>
+                        <td class="vertical-align">102</td>
+                    </tr>
+                    <tr>
+                        <td>XG</td>
+                        <td class="vertical-align">68</td>
+                        <td class="vertical-align">106</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+
+
+    </div>
+</div>
+    <footer>
+        <div style="margin-left: 60px;">
+         <a  target="_blank" href="https://www.instagram.com/heyssycorporation/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div style="margin-right: 60px;">
+         <a target="_blank" href="https://wa.me/5519996833077">contato</a>
+         <a></a>
+         <a></a>
+     </div>
+     </footer>
+     <script>
+        const sizeOptions = document.querySelectorAll('.size-option');
+const availabilityMessage = document.querySelector('.availability-status');
+const buyButton = document.querySelector('.buy-button');
+
+sizeOptions.forEach(sizeOption => {
+  sizeOption.addEventListener('click', () => {
+    const size = sizeOption.dataset.size;
+    const isAvailable = checkAvailability(size);
+
+    availabilityMessage.textContent = isAvailable
+      ? `Tamanho ${size} disponível!`
+      : `Tamanho ${size} indisponível.`;
+
+    if (isAvailable) {
+      buyButton.style.display = 'block'; // Exibir botão de compra
+    } else {
+      buyButton.style.display = 'none'; // Ocultar botão de compra
+    }
+  });
+});
+
+// Função de exemplo para verificar a disponibilidade com lógica personalizada
+function checkAvailability(size) {
+  // Coloque sua lógica de disponibilidade aqui
+  // Por exemplo, verificar em um banco de dados ou em um objeto de produtos
+  const availableSizes = ['P', 'M', 'G'];
+  return availableSizes.includes(size);
+}
+const precoProduto = 99.9; // Preço do produto obtido do banco de dados
+const estoqueDisponivel = true; // Indicador de disponibilidade obtido do banco de dados
+
+// Exibindo o preço do produto
+const productPriceElement = document.getElementById('product-price');
+productPriceElement.textContent = `R$ ${precoProduto.toFixed(2)}`;
+
+// Exibindo o status de disponibilidade
+const availabilityStatusElement = document.querySelector('.availability-status');
+availabilityStatusElement.textContent = estoqueDisponivel ? '' : 'Produto indisponível';
+
+// Habilitando ou desabilitando o botão de comprar com base na disponibilidade
+
+buyButton.disabled = !estoqueDisponivel;
+ // Defina a imagem "pngshirt" como imagem padrão ao carregar a página
+ window.addEventListener('load', () => {
+    const defaultImageUrl = 'angel/angelheyssy.png';
+    const productImage = document.getElementById('product-image');
+    const productImageContainer = document.querySelector('.imgprodcut');
+
+    productImage.style.backgroundImage = `url(${defaultImageUrl})`;
+    productImageContainer.style.backgroundImage = `url(${defaultImageUrl})`;
+  });
+
+  // Captura os eventos de clique nas thumbnails e atualiza a imagem principal
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const productImage = document.getElementById('product-image');
+  const productImageContainer = document.querySelector('.imgprodcut');
+
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+      const imageUrl = thumbnail.dataset.image;
+      productImage.style.backgroundImage = `url(${imageUrl})`;
+      productImageContainer.style.backgroundImage = `url(${imageUrl})`; // Atualiza a div principal também
+    });
+});
+     </script>
+</body>
+</html>

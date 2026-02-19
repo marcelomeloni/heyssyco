@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="content">
+    <nav>
+        <a href="index.html"><img width="100px" height="60px" src="heyssyaa.png"></a>
+        <div class="elements">
+            <a href="shop.html">shop</a>
+            <a target="_blank" href="https://discord.gg/4YdYnayt9Z">community</a>
+            <a href="#">social</a>
+        </div>
+        <div class="elements">
+            <a><i class="fa-solid fa-user"></i></a>
+            <a><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+    <div class="lateralmenu">
+        <nav>
+            <a>all</a>
+            <a>t-shirts</a>
+        </nav>
+    </div>
+    <div class="shopcontainer">
+        <div class="shopline">
+           
+            <div onclick="redirecionar('clownarabic.html')"class="produto" >
+                <div class="productimg" style="background-image: url('clownarabic/clownarabic.png');" onmouseover="trocarImagem(this, 'clownarabic/clownarabiccosta.png');" onmouseout="restaurarImagem(this, 'clownarabic/clownarabic.png');"></div>
+                <div class="producttxt">
+                    <div class="producttxt topside">
+                    <span class="producttypename">Camiseta Heyssy</span>
+                    <br>
+                    <span class="productrealname">Clown Arabic</span>
+                </div>
+                <div class="price">R$99,90</div>
+                </div>
+            </div>
+            <div onclick="redirecionar('angel.html')"class="produto" >
+                <div class="productimg" style="background-image: url('angel/angelheyssy.png');" onmouseover="trocarImagem(this, 'angel/angelheyssycosta.png');" onmouseout="restaurarImagem(this, 'angel/angelheyssy.png');"></div>
+                <div class="producttxt">
+                    <div class="producttxt topside">
+                    <span class="producttypename">Camiseta Heyssy</span>
+                    <br>
+                    <span class="productrealname">Angel</span>
+                </div>
+                <div class="price">R$99,90</div>
+                </div>
+            </div>
+            
+            <div  class="produto tio-patinhas" onmouseover="mostrarBloqueado(this)" onmouseout="ocultarBloqueado(this)">
+
+                <div class="productimg" style="background-image: url('patinhas/frentepatinhas.png');" onmouseover="trocarImagem(this, 'patinhas/costapatinhas.png');" onmouseout="restaurarImagem(this, 'patinhas/frentepatinhas.png');"></div>
+                <div class="producttxt">
+                    <div class="producttxt topside">
+                    <span class="producttypename">Camiseta Heyssy</span>
+                    <br>
+                    <span class="productrealname">Tio Patinhas</span>
+                </div>
+                <div class="price">R$220,90</div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+    <footer>
+        <div style="margin-left: 60px;">
+         <a  target="_blank" href="https://www.instagram.com/heyssycorporation/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div style="margin-right: 60px;">
+         <a target="_blank" href="https://wa.me/5519996833077">contato</a>
+         <a></a>
+         <a></a>
+     </div>
+     </footer>
+    <script> function redirecionar(pagina) {
+        window.location.href = pagina;
+    }
+    function trocarImagem(elemento, novaImagem) {
+            elemento.style.backgroundImage = `url('${novaImagem}')`;
+        }
+
+        function restaurarImagem(elemento, imagemOriginal) {
+            elemento.style.backgroundImage = `url('${imagemOriginal}')`;
+        }
+        function mostrarBloqueado(elemento) {
+            const bloqueadoDiv = document.createElement('div');
+    bloqueadoDiv.className = 'bloqueado-overlay';
+
+    const bloqueadoIcon = document.createElement('i');
+    bloqueadoIcon.className = 'fa-solid fa-lock';
+    bloqueadoDiv.appendChild(bloqueadoIcon);
+
+    const indisponivelText = document.createElement('div');
+    indisponivelText.textContent = 'Indisponível';
+    bloqueadoDiv.appendChild(indisponivelText);
+
+    elemento.appendChild(bloqueadoDiv);
+}
+function ocultarBloqueado(elemento) {
+    const bloqueadoDiv = elemento.querySelector('.bloqueado-overlay');
+    if (bloqueadoDiv) {
+        bloqueadoDiv.remove();
+    }
+}
+
+ 
+</script>
+</body>
+</html>
